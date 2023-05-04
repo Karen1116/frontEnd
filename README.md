@@ -1,4 +1,4 @@
-# FrontEnd
+# frontEnd
 前端学习过程中所做的笔记
 
 *HTML学习.md* ：学习HTML时写的笔记
