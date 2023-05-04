@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmet语法</title>
+    <style>
+        .hhh {
+            /* 大多是取单词首字母，也可根据全称自行选择哪几个字母 */
+            /* fsz50 */
+            font-size: 50px;
+            /* fw700 */
+            font-weight: 700;
+            /* tdn */
+            text-decoration: none;
+            /* bgc */
+            background-color: #fff;
+            /* lh2 */
+            line-height: 1.5;
+            /* w500+h300 */
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标签名: h1 -->
+    <h1></h1>
+    <!-- 已定义类的标签: .title -->
+    <div class="title"></div>
+    <!-- 已定义id的标签: #username -->
+    <div id="username"></div>
+    <!-- 已定义类和id的某标签: p.red#text -->
+    <p class="red" id="text"></p>
+    <!-- 同级多组标签: div+p+a -->
+    <div></div>
+    <p></p>
+    <a href=""></a>
+    <!-- 父子级多个标签: div>p>a -->
+    <div>
+        <p><a href=""></a></p>
+    </div>
+    <!-- 多个相同标签: li*3 -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- 标签带文本内容: p{我是p} -->
+    <p>我是p</p>
+    <!-- 父子级多个标签: table>thead>tr*3>td*4 -->
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+    </table>
+    <!-- 标签编号: li.$$li{li$}*3 -->
+    <li class="li01">li1</li>
+    <li class="li02">li2</li>
+    <li class="li03">li3</li>
+</body>
+</html>

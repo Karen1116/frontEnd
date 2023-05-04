@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1>h1标题</h1>
+    <h2>h2标题</h2>
+    <h6>h6标题</h6>
+    <p>段落<br/>换行</p>
+
+    <br>
+    <p><strong>加粗</strong>or<b>加粗</b></p>
+    <!-- 更推荐使用strong，有加重语气的语义 -->
+    <p><em>倾斜</em>or<i>倾斜</i></p>
+    <!-- 更推荐使用em，有加重语气的语义 -->
+    <p><del>删除线</del>or<s>删除线</s></p>
+    <!-- 更推荐使用del，有加重语气的语义 -->
+    <p><ins>下划线</ins>or<u>下划线</u></p>
+    <!-- 更推荐使用ins，有加重语气的语义 -->
+
+    <div>区域盒子，分区</div>or<span>区域盒子，跨度</span>
+    
+    <br><br>
+    <h5>图片：<img src="img/这是图片.png" /></h5>
+    <p><img src="img/图片不能显示.png" alt="图片不能显示时的文字替换" /></p>
+    <p><img src="img/这是图片.png" title="鼠标放在图片上提示的文字" /></p>
+    <p><img src="img/这是图片.png" width="400" /></p>
+    <p><img src="img/这是图片.png" height="80" /></p>
+    <!-- 实际中尽量不要同时修改而应该只修改width或只修改height，图片会自动等比例缩放，否则图片会有压缩问题 -->
+    <p><img src="img/这是图片.png" border="5" /></p>
+    <!-- 此处border爆红可能是因为该属性被弃用了，样式应该在CSS里 -->
+
+    <br><br>
+    <a href="http://www.baidu.com" target="_blank">超链接之外部链接</a>
+    <a href="内部链接用例.html" target="_blank">超链接之内部链接</a>
+    <a href="#">超链接之空链接</a>
+    <a href="img.7z">超链接之下载链接</a>
+    <a href="https://www.baidu.com" target="_blank"><img src="img/超链接之网页元素链接.png"></a>
+    <a href="#maodian">锚点链接</a>
+    <!-- 外部链接必须以http或https开头，内部链接要注意相对路径和绝对路径，空链接用于给未完成的网页留空，下载链接的地址是一个文件或压缩包，网页元素链接是点击文字、图片、表格、音频、视频等网页元素引起超链接，锚点链接是定位到页面某个位置的链接；target属性有四个值，默认的_self是在当前页面当前窗口打开，_blank是新标签页新窗口打开，_parent是父窗口父框架打开，_top是整个窗口顶级框架打开 -->
+    <h6 id="maodian">锚点在这</h6>
+
+    <!-- 注释语句，VSCode快捷键"Ctrl+/" -->
+
+    <h2><a href="综合练习案例/demo1.html" target="_blank"><br><br>综合练习案例1——中秋那些事儿<br><br><br><br></a></h2>
+
+    <table align="center" border="1" cellpadding="10" cellspacing="0" width="500">
+        <thead>
+            <tr>
+                <th>特殊字符</th>
+                <th>描述</th>
+                <th>字符实体码（前面未添加&号）</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td>空格</td>
+                <td>nbsp;</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>小于号</td>
+                <td>lt;</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>大于号</td>
+                <td>gt;</td>
+            </tr>
+            <tr>
+                <td>&amp;</td>
+                <td>和号</td>
+                <td>amp;</td>
+            </tr>
+            <tr>
+                <td>&yen;</td>
+                <td>人民币</td>
+                <td>yen;</td>
+            </tr>
+            <tr>
+                <td>&copy;</td>
+                <td>版权</td>
+                <td>copy;</td>
+            </tr>
+            <tr>
+                <td>&reg;</td>
+                <td>注册商标</td>
+                <td>reg;</td>
+            </tr>
+            <tr>
+                <td>&deg;</td>
+                <td>摄氏度</td>
+                <td>deg;</td>
+            </tr>
+            <tr>
+                <td>&plusmn;</td>
+                <td>正负号</td>
+                <td>plusmn;</td>
+            </tr>
+            <tr>
+                <td>&times;</td>
+                <td>乘号</td>
+                <td>times</td>
+            </tr>
+            <tr>
+                <td>&divide;</td>
+                <td>注册商标</td>
+                <td>divide;</td>
+            </tr>
+            <tr>
+                <td>&sup2;</td>
+                <td>平方</td>
+                <td>sup2;</td>
+            </tr>
+            <tr>
+                <td>&sup3;</td>
+                <td>立方</td>
+                <td>sup3;</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <table></table>定义表格，<thead></thead>包括表格头部区域，<tbody></tbody>包括表格主体区域，<tr></tr>定义表格的行，必须嵌套在<table></table>中，<th></th>定义表格中的表头单元格，<td></td>定义表格的单元格（<th></th>定义表格中的表头单元格），必须嵌套在<tr></tr>中；写在<table>内的属性中，align是对齐方式，border是边框，cellpadding是单元格边框与单元格内容的空白距离，cellspacing是单元格之间的空隙，width是表格总宽度，height是表格总高度 -->
+    <!-- 特殊字符，HTML预留了某些字符，这些字符必须被替换成字符实体，由实体名称加分号或实体编号加分号表示 -->
+
+    <h2><a href="综合练习案例/demo2.html" target="_blank"><br><br>综合练习案例2——天猫男子板鞋热销榜<br><br><br><br></a></h2>
+
+    <table width="555" height="333" border="1" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <td colspan="3"><em>合并单元格</em></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 合并单元格先确定是跨行还是跨列，跨行在目标最上侧单元格的td标签中写上rowspan=""，跨列在目标最左侧单元格的td标签中写上colspan=""，最后删除多余的单元格的td标签 -->
+
+    <br><br>
+    <ul>
+        <li>西瓜</li>
+        <li>蛋挞</li>
+        <li>提拉米苏</li>
+        <li>肉松小贝</li>
+        <li>...</li>
+    </ul>
+    <ol>
+        <li>lyj</li>
+        <li>lkl</li>
+        <li>pth</li>
+        <li>zy</li>
+    </ol>
+    <dl>
+        <dt>实用工具</dt>
+        <dd>geek</dd>
+        <dd>bandizip</dd>
+        <dd>everything</dd>
+        <dd>memreduct</dd>
+        <dd>watt toolkit</dd>
+    </dl>
+    <!-- 无序列表、有序列表的<ul></ul>、<ol></ol>之间只能嵌套<li></li>，<li></li>之间能嵌套所有元素；自定义列表的<dl></dl>之间只能嵌套<dd></dd>，dt和dd的个数都无限制，通常一个dt对应多个dd -->
+    
+    <br><br>
+    <form action="test.php" method="post" name="test">
+        <label for="username">用户名：</label>
+        <input type="text" name="username" id="username" value="用户名"><br>
+        <label for="pwd">密码：</label>
+        <input type="password" name="pwd" id="pwd"><br>
+        性别：
+        <input type="radio" name="gender" value="nan" id="nan"><label for="nan">男</label>
+        <input type="radio" name="gender" value="nv" id="nv"><label for="nv">女</label><br>
+        爱好球类：
+        <input type="checkbox" name="ball" value="篮球" id="basketball">
+        <label for="basketball">篮球</label>
+        <input type="checkbox" name="ball" value="足球" id="soccer">
+        <label for="soccer">足球</label>
+        <input type="checkbox" name="ball" value="乒乓球" id="pingpong">
+        <label for="pingpong">乒乓球</label>
+        <input type="checkbox" name="ball" value="羽毛球" id="badminton">
+        <label for="badminton">羽毛球</label>
+        <input type="checkbox" name="ball" value="网球" id="tennis">
+        <label for="tennis">网球</label>
+        <input type="checkbox" name="ball" value="其他" id="else">
+        <label for="else">其他</label><br>
+        <input type="submit" value="注册"><br>
+        <input type="reset" value="重新填写"><br>
+        <input type="button" name="获取验证码" value="发送验证码"><br>
+        <label for="portrait">上传头像：</label>
+        <input type="file" name="头像" id="portrait"><br>
+        <input type="image" src="img/点我提交.png"><br>
+        <input type="hidden" name="隐藏元素" value="yes"><br>
+        喜欢的颜色：
+        <input type="color" name="color"><br>
+        出生日期：
+        <input type="date" name="birthday"><br>
+        电子邮箱：
+        <input type="email"><br>
+        音量：
+        <input type="range"><br>
+        年级：
+        <select>
+            <option>大一</option>
+            <option>大二</option>
+            <option>大三</option>
+            <option>大四</option>
+            <option selected="selected">...</option>
+        </select><br>
+        <label for="introduction">自我介绍：</label>
+        <textarea id="introduction" cols="40" rows="6">请在这里输入一段自我介绍</textarea>
+    </form>
+    <!-- <form></form>表单域内的表单元素信息提交给服务器。<input>属性有，type是input元素类型，name是input元素名称，value是input元素值，checked规定此input元素首次加载时应被选中，maxlength是输入字段最大长度 -->
+    <!-- 单选按钮必须有相同的name值才能实现单选，复选框也要。每个表单元素都要有name和value，供后台开发使用。label标签包含的文本被点击时选中对应的表单元素，增加用户体验。下拉菜单的option标签若设置有selected="selected"即作为默认选中项，其rows和cols属性不使用，而在CSS中体现。 -->
+
+    <h2><a href="综合练习案例/demo3.html" target="_blank"><br><br>综合练习案例3——婚恋网站注册页面<br><br><br><br></a></h2>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        /* 相对定位 */
+        .relative {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        /* 绝对定位 */
+        /* 相对于父级  */
+        /* 子绝父相 */
+        .father_no_st {
+            position: relative;
+        }
+        .absolute_f {
+            position: absolute;
+            top: 0;
+            left: 250px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        /* 相对于浏览器 */
+        .absolute_b {
+            position: absolute;
+            top: 0;
+            left: 250px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        /* 固定定位 */
+        .fixed {
+            position: fixed;
+            top: 50%;
+            right: 5px;
+            border: 1px solid gray;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 相对定位relative -->
+    <div>        
+        <p>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</p>
+        <p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+        <p>lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <div class="relative">relative</div>
+        <p>ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
+        <p>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+        <p>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
+        <p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+    </div>
+    <br>
+    <!-- 绝对定位absolute -->
+    <!-- 父级非静态定位 -->
+    <div class="father_no_st">
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+        <p>sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+        <p>ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
+        <div class="absolute_f">absolute</div>
+        <p>lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <p>uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
+        <p>ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
+        <p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+    </div>
+    <!-- 父级静态定位 -->
+    <div class="father_st">
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+        <p>sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+        <p>ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
+        <div class="absolute_b">absolute</div>
+        <p>lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <p>uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
+        <p>ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
+        <p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+    </div>
+    <!-- 固定定位fixed -->
+    <div>
+        <div class="fixed">fixed</div>
+    </div>
+</body>
+</html>

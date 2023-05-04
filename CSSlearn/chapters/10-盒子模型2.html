@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型2</title>
+    <style>
+        /* 内容 */
+        .content {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+        /* 边框 */
+        .border1 {
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            border-left: 3px solid orange;
+            border-bottom: 3px solid orange;
+        }
+        .border2 {
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            border: 4px dashed yellow;
+        }
+        .border3 {
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            border: 5px dotted green;
+        }
+        /* 内边距 */
+        .padding {
+            width: 66px;
+            height: 66px;
+            background-color: pink;
+            padding: 10px 10px 5px 5px;
+        }
+        /* 外边距，极类似内边距 */
+        .margin {
+            width: 66px;
+            height: 66px;
+            background-color: blue;
+            margin: 20px 10px;
+        }
+        /* 清除默认内外边距 */ 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 版心居中 */
+        .centered {
+            width: 800px;
+            height: 300px;
+            background-color: gray;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">内容</div>
+    <div class="border1">左下实线边框</div>
+    <div class="border2">虚线边框</div>
+    <div class="border3">点线边框</div>
+    <div class="padding">内边距</div>
+    <div class="margin">外边距</div>
+    <p>内外边距被清除</p>
+    <div class="centered">版心居中</div>
+</body>
+</html>

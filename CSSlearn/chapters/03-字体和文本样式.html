@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体和文本样式</title>
+    <style>
+        /* 字体大小（字号），Chrome默认为16px */
+        .size {
+            font-size: 30px;
+        }
+        /* 字体粗细 */
+        .weight {
+            font-weight: 700;
+        }
+        .h1_weight {
+            font-weight: 400;
+        }
+        /* 字体倾斜 */
+        em {
+            font-style: normal;
+        }
+        h2 {
+            font-style: italic;
+        }
+        /* 字体系列，Windows默认微软雅黑、macOS默认苹方 */
+        .font_family {
+            /* font-family: 仿宋; */
+            font-family: 微软雅黑, 黑体, SC, Arial, Helvetica, sans-serif;
+        }
+        /* font复合属性 */
+        .lianxie {
+            font: italic 700 50px 仿宋;
+        }
+
+        /* 文本缩进，1em是当前font-size的一个字的大小 */
+        .text_indent {
+            text-indent: 2em;
+        }
+        /* 文本水平对齐方式，对除文字以外的元素标签也有用，需要对其元素父级标签设置样式 */
+        .text_align {
+            text-align: center;
+        }
+        /* 文本修饰线 */
+        .text_decoration {
+            text-decoration: none;
+        }
+        /* 行高 */
+        .line_height {
+            line-height: 1.5;
+        }
+        /* 标签水平居中 */
+        .shuipingjuzhong {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="size">30px</p>
+    <div class="weight">粗</div>
+    <h1 class="h1_weight">细h1</h1>
+    <em>正em</em>
+    <h2>斜h2</h2>
+    <div class="font_family">无衬线字体系列</div>
+    <div class="lianxie">连写font复合属性</div>
+    
+    <div class="text_indent">文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进</div>
+    <h3 class="text_align">文本居中</h3>
+    <a href="https://www.baidu.com" class="text_decoration">去除a标签的下划线</a>
+    <p class="line_height">行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高</p>
+    <div class="shuipingjuzhong"></div>
+
+</body>
+</html>

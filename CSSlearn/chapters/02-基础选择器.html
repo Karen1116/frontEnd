@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器</title>
+    <style>
+        /* 标签选择器选中的所有该标签的样式都会同时修改 */
+        p{
+            color: green;
+            font-size: large;
+            background-color: aqua;
+            width: 333px;
+        }
+        /* 类选择器会修改所有带有该类名的标签的样式 */
+        .blue{
+            color: blue;
+        }
+        .size-66px{
+            font-size: 66px;
+            width: 444px;
+        }
+        /* id选择器会修改唯一对应的id的标签的样式 */
+        #username{
+            background-color: hotpink;
+        }
+        /* 通配符选择器会修改页面所有标签的样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>pppppppp</p>
+    <p class="size-66px">bbbbbbbb</p>
+    <div class="blue size-66px">蓝色类</div>
+    <h2 class="blue">也是蓝色类</h2>
+    <div>用户名<input type="text" id="username"></div>
+</body>
+</html>

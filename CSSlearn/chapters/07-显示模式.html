@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        /* 块元素：可设置宽高 */
+        div {
+            height: 50px;
+            background-color: red;
+        }
+        header {
+            width: 200px;
+            background-color: orange;
+        }
+        /* 行内元素：不可设置宽高 */
+        a {
+            width:600px;
+            height: 400px;
+            background-color: yellow;
+        }
+        span {
+            width: 400px;
+            height: 600px;
+            background-color: green;
+        }
+        /* 行内块元素：可设置宽高 */
+        input {
+            width: 100px;
+            height: 15px;
+            background-color: cyan;
+        }
+        textarea {
+            width: 150px;
+            height: 66px;
+            background-color: blue;
+        }
+        button {
+            width: 120px;
+            height: 22px;
+            background-color: purple;
+        }
+        /* 元素显示模式转换，下面是两两转换 */
+        .div2inline {
+            width: 150px;
+            height: 25px;
+            background-color: gray;
+            display: inline;
+        }
+        .div2inline_block {
+            width: 150px;
+            height: 25px;
+            background-color: gray;
+            display: inline-block;
+        }
+        .a2block {
+            width: 150px;
+            height: 18px;
+            background-color: gray;
+            display: block;
+        }
+        .a2inline_block {
+            width: 160px;
+            height: 25px;
+            background-color: gray;
+            display: inline-block;
+        }
+        .input2block {
+            width: 100px;
+            height: 25px;
+            background-color: gray;
+            display: block;
+        }
+        .input2inline {
+            width: 120px;
+            height: 18px;
+            background-color: gray;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <br><p>块元素：</p>
+    <div>div_div</div>
+    <header>header_header</header>
+    <nav>nav_nav</nav>
+
+    <br><p>行内元素：</p>
+    <a href="#">a_a</a>
+    <span>span_span</span>
+    <em>em_em</em>
+
+    <br><p>行内块元素：</p>
+    <input type="text" value="input_input">
+    <textarea name="ttt" id="" cols="20" rows="5">textarea_textarea</textarea>
+    <button>button_button</button>
+
+    <br><p>显示模式转换：</p>
+    <div class="div2inline">div to inline</div>
+    <div class="div2inline">div to inline</div>
+    <div class="div2inline_block">div to inline-block</div>
+    <div class="div2inline_block">div to inline-block</div>
+    <a href="#" class="a2block">a to block</a>
+    <a href="#" class="a2block">a to block</a>
+    <a href="#" class="a2inline_block">a to inline-block</a>
+    <a href="#" class="a2inline_block">a to inline-block</a>
+    <input type="text" class="input2block" value="input to block">
+    <input type="text" class="input2block" value="input to block">
+    <input type="text" class="input2inline" value="input to inline">
+    <input type="text" class="input2inline" value="input to inline">
+
+    <br><p>标签嵌套规则：（f12检查下列嵌套浏览器的解析与实际代码的差异）</p>
+    
+    <p><p>p中嵌套p</p></p>
+    <p><div>p中嵌套div</div></p>
+    <p><h2>p中嵌套h2</h2></p>
+    <h1><h3>h1中嵌套h3</h3></h1>
+    <h3><p>h3中嵌套p</p></h3>
+    <h1><div>h1中嵌套div</div></h1>
+    <a href="#">a中嵌套a<a href="#"></a></a>
+</body>
+</html>

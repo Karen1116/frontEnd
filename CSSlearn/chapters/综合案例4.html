@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例4</title>
+    <style>
+        /* 清除默认margin和padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 清除a标签默认样式 */
+        a {
+            text-decoration: none;
+            color: white
+        }
+        a:hover,
+        a:visited,
+        a:link,
+        a:active {
+            color: white;
+        }
+        /* 导航栏整体 */
+        ul {
+            position: relative;
+            list-style: none;
+        }
+        /* 导航栏相 */
+        li {
+            position: relative;
+        }
+        /* 选项王者营地、官方微博、微信公众号、官方视频号 */
+        .wzyd,
+        .gfwb,
+        .wxgzh,
+        .gfsph {
+            margin: 1px 0 0 0;
+            width: 120px;
+            height: 38px;
+            line-height: 38px;
+            background-color: rgb(85, 85, 85);
+            text-align: center;
+            font-size: 14px;
+            font-family: "Microsoft YaHei",sans-serif;
+            color: white;
+            cursor: default;
+            opacity: 0.8;
+        }
+        /* 固定导航栏 */
+        .fixednav {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            transform: translate(0, -50%);
+        }
+        /* 选项框圆角 */
+        .navbar {
+            position: relative;
+            border-radius: 2px;
+        }
+        /* 选项框hover */
+        .navbar:hover {
+            background-color: rgb(255, 201, 39);
+        }
+        .download:hover {
+            background-color: rgb(255, 169, 10);
+        }
+        /* 下载游戏选项 */
+        .download {
+            margin: 1px 0 0 0;
+            width: 120px;
+            background-color: rgb(255, 169, 10);
+            text-align: center;
+            font-size: 14px;
+            font-family: "Microsoft YaHei",sans-serif;
+            color: white;
+        }
+        .downloadQRcode {
+            margin: 4px 4px 0 4px;
+            border-radius: 2px;
+            width: 108px;
+            height: 108px; 
+        }
+        .downloadtxt {
+            padding-bottom: 4px;
+        }
+        /* icon */
+        .wzyd img,
+        .gfwb img,
+        .wxgzh img,
+        .gfsph img {
+            display: inline-block;
+            margin-right: 5px;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+        /* text */
+        .wzydtxt,
+        .gfwbtxt,
+        .wxgzhtxt,
+        .gfsphtxt {
+            display: inline-block;
+        }
+        /* 官方微博光标 */
+        .gfwb {
+            cursor: pointer;
+        }
+        /* 二维码隐藏区 */
+        .QRcodebox {
+            position: absolute;
+            right: 100%;
+            bottom: 0;
+            display: none;
+            margin-right: 2px;
+            border: 1px solid rgb(255, 201, 39);
+            text-align: center;
+            width: 115px;
+            height: 150px;
+            background-color: rgb(85, 85, 85);
+        }
+        /* 二维码图片 */
+        .QRcodebox img {
+            width: 100px;
+            height: 100px;
+            margin: 5px auto;
+        }
+        /* 二维码下方文字 */
+        .QRcodebox>p {
+            margin: 0 auto;
+            width: 101px;
+            height: 34px;
+            line-height: 17px;
+            font-size: 12px;
+            text-align: center;
+        }
+        ul li:nth-child(n+3) div p {
+            width: 100%;
+
+        }
+        .QRcodebox>p>span {
+            color: rgb(255, 169, 10);
+        }
+        /* 鼠标悬停时显示 */
+        .navbar:hover .QRcodebox {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixednav">
+        <ul>
+            <li>
+                <div class="download navbar">
+                    <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/wzry_qrcode.jpg" alt="下载游戏" class="downloadQRcode">
+                    <div class="downloadtxt">下载游戏</div>
+                </div>
+            </li>
+            <li> 
+                <div class="wzyd navbar">
+                    <div class="QRcodebox">
+                        <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/yd_qrcode.jpg" alt="" class="QRcode">
+                        <p id="wzyd_p">扫码<span>下载王者营地</span><br>每天<span>领取福利好礼</span></p>
+                    </div>
+                    <img src="https://pp.myapp.com/ma_icon/0/icon_42287337_1671435186/256" alt="王者营地">
+                    <div class="wzydtxt">王者营地</div>
+                </div>
+            </li>
+            <li>
+                <a href="https://weibo.com/heromoba" target="_blank">
+                    <div class="gfwb navbar">
+                        <div class="QRcodebox">
+                            <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/weibo.jpg" alt="" class="QRcode">
+                            <p>扫码<span>关注官方微博</span><br>获取<span>一手爆料及福利</span></p>
+                        </div>
+                        <img src="https://weibo.com/favicon.ico" alt="官方微博">
+                        <div class="gfwbtxt">官方微博</div>
+                    </div>
+                </a>
+            </li>
+            <li>            
+                <div class="wxgzh navbar">
+                    <div class="QRcodebox">
+                        <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/gzh_code.jpg" alt="" class="QRcode">
+                        <p>扫码<span>关注官方公众号</span>获取<span>最新资讯及好礼</span></p>
+                    </div>
+                    <img src="https://app-center.cdn.bcebos.com/appcenter/file/upload/a7c39683dd48fe24bc9df0c4ba12d260e5e9df79-72d0-4bed-9f72-fcfff23226d7.png" alt="微信公众号">
+                    <div class="wxgzhtxt">微信公众号</div>
+                </div>
+            </li>
+            <li>
+                <div class="gfsph navbar">
+                    <div class="QRcodebox">
+                        <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/shipinhao_code.jpg" alt="" class="QRcode">
+                        <p>扫码<span>关注官方视频号</span>获取<span>精彩视频及福利</span></p>
+                    </div>
+                    <img src="https://res.wx.qq.com/t/wx_fed/finder/helper/finder-helper-web/res/favicon.ico" alt="官方视频号">
+                    <div class="gfsphtxt">官方视频号</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

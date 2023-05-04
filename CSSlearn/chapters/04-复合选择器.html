@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 后代选择器先通过选择器1找父标签，再在其中通过选择器2找其后代（子、孙子、重孙子...）元素标签 */
+        .father p {
+            color: red;
+        }
+        div .grandson{
+            color: blue;
+        }
+        /* 子代选择器先通过选择器1找父标签，再在其中通过选择器2找其子代元素标签 */
+        .father>.son {
+            color: rgb(0, 255, 0);
+        }
+        /* 并集选择器选中满足选择器1或选择器2的多组元素标签设置一样的样式 */
+        .p2, 
+        a, 
+        #p3 {
+            color: purple;
+        }
+        /* 交集选择器选中同时满足选择器1和选择器2的元素标签 */
+        h5.h {
+            color: brown;
+        }
+        /* hover伪类选择器选中的是鼠标悬停于某标签上时的状态来设置样式 */
+        .noline {
+            text-decoration: none;
+            color: black;
+        }
+        .noline:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        /* 结构伪类选择器按子元素在父元素的顺序选择到第几个子元素 */
+        .li1:first-child {
+            color: blueviolet;
+        }
+        .li1:last-child {
+            color: blanchedalmond;
+        }
+        .li1:nth-child(4) {
+            color: yellowgreen;
+        }
+        .li1:nth-last-child(2) {
+            color: cadetblue;
+        }
+        .li2:nth-child(2n) {
+            background-color: red;
+        }
+        .li2:nth-child(odd) {
+            background-color: blue;
+        }
+        .li2:nth-child(-n+5) {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p>第一个div标签里的p标签</p>
+        <div class="son">第一个div标签里的div标签<div class="grandson">第一个div标签里的div标签里的div标签</div></div>
+    </div>
+    <div>
+        <p class="p2">第二个div标签里的p标签</p>
+    </div>
+    <div>
+        <a href="#">第三个div标签里的a标签</a>
+        <p id="p3">第三个div标签里的p标签</p>
+    </div>
+    <div>
+        <h4 class="h">第四个div标签里的h4标签</h4>
+        <h5>第四个div标签里的h5标签</h5>
+        <h5 class="h">第四个div标签里的h5标签</h5>
+        <a href="#" target="_blank" class="noline">第四个div标签里的a标签</a>
+    </div>
+    <div>
+        <ul>
+            <li class="li1">第五个div标签里的第一个ul标签里的第1个li</li>
+            <li class="li1">第五个div标签里的第一个ul标签里的第2个li</li>
+            <li class="li1">第五个div标签里的第一个ul标签里的第3个li</li>
+            <li class="li1">第五个div标签里的第一个ul标签里的第4个li</li>
+            <li class="li1">第五个div标签里的第一个ul标签里的第5个li</li>
+            <li class="li1">第五个div标签里的第一个ul标签里的第6个li</li>
+        </ul>
+        <ul>
+            <li class="li2">第五个div标签里的第一个ul标签里的第1个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第2个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第3个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第4个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第5个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第6个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第7个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第8个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第9个li</li>
+            <li class="li2">第五个div标签里的第一个ul标签里的第10个li</li>
+        </ul>
+    </div>
+</body>
+</html>

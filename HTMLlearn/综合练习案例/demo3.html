@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世纪佳缘——你在我也在</title>
+</head>
+<body>
+    <div>
+        <h4>青春不常在，抓紧谈恋爱</h4>
+    </div>
+    <!-- 以下代码仅使用HTML作练习，因此会存在一些业务逻辑问题，如表单值未给出，选项不完整 -->
+    <div>
+        <form>
+            <table width="456">
+                <tr>
+                    <td>性别</td>
+                    <td>
+                        <input type="radio" name="gender" id="nan"><label for="nan"><img src="img/男.png" height="18"> 男</label>
+                        <input type="radio" name="gender" id="nv"><label for="nv"><img src="img/女.png" height="18"> 女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>生日</td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="area">所在地区</label>
+                    </td>
+                    <td>
+                        <input type="text" id="area">
+                    </td>
+                </tr>
+                <tr>
+                    <td>婚姻状况</td>
+                    <td>
+                        <input type="radio" name="hunyin" id="weihun"><labe for="weihun">未婚</label>
+                        <input type="radio" name="hunyin" id="yihun"><label for="yihun">已婚</label>
+                        <input type="radio" name="hunyin" id="sangou"><label for="sangou">丧偶</label>
+                        <input type="radio" name="hunyin" id="lihun"><label for="lihun">离婚</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>学历</td>
+                    <td>
+                        <select>
+                            <option>初中及中专</option>
+                            <option>职业高中</option>
+                            <option>普通高中</option>
+                            <option>大学专科</option>
+                            <option>大学本科</option>
+                            <option>硕士研究生</option>
+                            <option>博士研究生</option>
+                            <option selected="selected">...</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>身高</td>
+                    <td><input type="text" maxlength="5">cm</td>
+                </tr>
+                <tr>
+                    <td>体重</td>
+                    <td><input type="text" maxlength="5">kg</td>
+                </tr>
+                <tr>
+                    <td>自我介绍</td>
+                    <td>
+                        <textarea>请简要介绍你自己</textarea>
+                    </td>
+                </tr>
+            </table>
+            <p><input type="submit" value="注册"></p>
+            <input type="checkbox" value="tongyi">我已阅读并同意<a href="#">注册条款</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS特性</title>
+    <style>
+        /* 继承性 */
+        .inherit {
+            /* 能控制文字的属性可以继承 */
+            color: red;
+            font-size: 25px;
+            /* 不能控制文字的属性不可以继承 */
+            height: 300px;
+        }
+        /* 层叠性 */
+        p {
+            color: red;
+            color: green;
+        }
+        .cascade {
+            font-size: 20px;
+        }
+        /* 优先级，下面是基础选择器的优先级测试 */
+        h4 {
+            color: blue;
+        }
+        .priority1 {
+            color: brown;
+        }
+        .priority2 {
+            color: blue
+        }
+        #priority2 {
+            color: brown;
+        }
+        #priority3 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="inherit">
+        div里的文字
+        <span>div里的span</span>
+        <a href="#">继承性失效</a>
+        <h1>继承性失效</h1>
+    </div>
+    <br>
+    <p class="cascade">层叠性</p>
+    <br>
+    <h4 class="priority1">测试优先级：类选择器>标签选择器</h4>
+    <h5 class="priority2" id="priority2">测试优先级：id选择器>类选择器</h5>
+    <h6 id="priority3" style="color: brown;">测试优先级：行内样式>id选择器</h6>
+</body>
+</html>

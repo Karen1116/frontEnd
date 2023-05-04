@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <style>
+        /* 背景颜色，默认为透明（rgba(0,0,0,0)，transparent） */
+        .bgc {
+            width: 222px;
+            height: 222px;
+            background-color: #ccc;
+        }
+        /* 背景图片 */
+        .bgi {
+            width: 500px;
+            height: 300px;
+            background-image: url(img/background_img.jpg);
+        }
+        /* 背景平铺，默认值为repeat */
+        .bgr {
+            width: 666px;
+            height: 666px;
+            background-image: url(img/background_repeat.webp);
+            background-repeat: repeat-x;
+        }
+        /* 背景位置，属性值有方位名词表示和坐标表示 */
+        .bgp {
+            width: 800px;
+            height: 600px;
+            background-color: aqua;
+            background-image: url(img/background_position.webp);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        /* background复合属性 */
+        .bg {
+            width: 800px;
+            height: 800px;
+            background: blue url(img/background.png) no-repeat right center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgc">background-color</div>
+    <div class="bgi">background-image</div>
+    <div class="bgr">background-repeat</div>
+    <div class="bgp">background-position</div>
+    <div class="bg">background</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>装饰</title>
+    <style>
+        /* 垂直对齐 */
+        .verticalbkg {
+            width: 200px;
+            height: 50px;
+            background-color: bisque;
+            text-align: center;
+            line-height: 50px;
+        }
+        .input {
+            width: 100px;
+            height: 30px;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+        button {
+            height: 30px;
+            vertical-align: middle;
+        }
+        /* 光标类型 */
+        .ghbk {
+            width: 200px;
+            cursor: pointer;
+        }
+        /* 边框圆角 */
+        .sjjg {
+            width: 88px;
+            height: 88px;
+            border-radius: 10px;
+        }
+        .lemon {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            background-color: greenyellow;
+            border-radius: 10px 80px;
+        }
+        .circle {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background-color: skyblue;
+            border-radius: 50%;
+        }
+        /* 溢出显示 */
+        .overflow {
+            width: 300px;
+            height: 500px;
+            border: 2px solid black;
+            overflow: auto;
+        }
+        /* 元素隐藏 */
+        .visibility {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            visibility: hidden;
+        }
+        .display {
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+        /* 元素整体透明度 */
+        .opacity {
+            width: 600px;
+            height: 800px;
+            background-color: red;
+            opacity: 0.66;
+        }
+        .opacity img {
+            width: 480px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直对齐 -->
+    <div class="verticalbkg">
+        <input type="text" class="input">
+        <button>搜索</button>
+    </div>
+    <br>
+    <!-- 光标类型 -->
+    <div>
+        <img src="https://www.ghxi.com/wp-content/uploads/2019/12/2020logo.png" alt="果核剥壳" class="ghbk">
+    </div>
+    <br>
+    <!-- 边框圆角 -->
+    <div>
+        <img src="https://pic.leetcode-cn.com/1654836661-HSWjAb-1627640875-pWplzE-Frame 1438.jpeg" alt="数据结构" class="sjjg">
+        <div class="lemon"></div>
+        <div class="circle"></div>
+    </div>
+    <br>
+    <!-- 溢出显示 -->
+    <div>
+        <div class="overflow">溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试</div>
+    </div>
+    <br>
+    <!-- 元素隐藏 -->
+    <div>
+        visibility_hidden:<div class="visibility"></div>
+        display_none:<div class="display"></div>
+    </div>
+    <br>
+    <!-- 元素整体透明度 -->
+    <div>
+        <div class="opacity">
+            <img src="img/forest.jfif" alt="Forest">
+        </div>
+    </div>
+</body>
+</html>
